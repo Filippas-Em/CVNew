@@ -1,0 +1,35 @@
+@media screen and (max-width: 600px){
+    .desktopNav {
+        display: none;
+    }
+    #hamburgerNav {
+        display: flex;
+    }
+}
+
+@media screen and (min-width: 880px) and (max-width: 1150px){
+    #logo {
+        display: none;
+    }
+    .navbarnav {
+        margin-right: 0;
+    }
+    .desktopNav {
+        justify-content: center;
+    }
+}
+
+@media screen and (min-width: 601px) and (max-width: 880px){
+    .navbarnav {
+        display: none;
+    }
+    .desktopNav {
+        justify-content: center;
+    }
+    .desktopNav {
+        display: none;
+    }
+    #hamburgerNav {
+        display: flex;
+    }
+}
