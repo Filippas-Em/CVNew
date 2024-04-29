@@ -4,7 +4,10 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
+
+
 body{
     font-family: "roboto", "poppins", sans-serif;
     background-color: #f4f4f4;
@@ -12,13 +15,13 @@ body{
 }
 .desktopNav {
     font-size: 40px;
-    padding-top: 1em;
+    padding-top: 1%;
     display: flex;
-    justify-content: flex-end;
+    
 }
 #logo {
     font-size: 30px;
-    margin-left: 4em;
+    margin-left: 5%;
     margin-right: auto;
 }
 
@@ -29,7 +32,6 @@ body{
 .navbarnav {
     display: flex;
     justify-content: flex-end;
-    margin-right: 4em;
 }
 
 .navbarnav a{
@@ -50,7 +52,7 @@ ul{
     height: 30px;
     margin-right: 10px;
 }
-
+ 
 .nav__link {
     position: relative;
     transition: all 0.4s ;
@@ -76,77 +78,90 @@ ul{
     pointer-events: none;
 }
 
-#hamburgerNav {
-    display: none;
+
+
+
+
+#photo1 {
+    background-size: cover;
+    background-position: center center;
+    box-shadow: 0 5px 5px 5px rgba(13, 110, 253, 0.2);
+    animation: animate 5s ease-in-out infinite;
+    transition: all 1s ease-in-out;
+    width: 500px;
+    height: 400px;
+    margin-top: 10%;
+    margin-left: 5%;
+    margin-right: auto;
 }
 
-.hamburgerMenu {
-    position: relative;
-    display: inline-block;
 
-}
-
-.hamburgerIcon {
-    display: flex;
-    flex-direction: column ;
-    justify-content: space-between;
-    height: 24px;
-    width: 30px;
-    cursor: pointer;
-}
-
-.hamburgerIcon span {
-    width: 100%;
-    height: 2px;
-    background-color: black;
-    transition: all 0.3 ease-in-out;
-}
-
-.menuLinks {
-    position: absolute;
-    top: 100%;
-    right: 0%;
-    background-color: white;
-    width: fit-content;
-    max-height: 0;
-    overflow: hidden;
-    transition: all 0.3s ease-in-out;
-}
-
-.menuLinks a {
-    display: block;
-    padding: 10px;
-    text-align: center;
-    font-size: 1.5rem;
-    color: black;
-    text-decoration: none;
-    transition: all 0.3s ease-in-out;
-}
-
-.menuLinks li{
-    list-style: none;
+@keyframes animate {
+    0%,100% {
+        border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
     }
 
-.menuLinks.open {
-   max-height: 300px;
+    50% {
+        border-radius: 30% 60% 70% 40% / 50% 60% 30% 60%;
+    }
 
-}
-.hamburgerIcon.open span:first-child {
-    transform: rotate(45deg) translate(10px, 5px);
-}
-.hamburgerIcon.open span:nth-child(2) {
-    opacity: 0;
-}
-.hamburgerIcon.open span:last-child {
-    transform: rotate(-45deg) translate(10px, -5px);
+    
 }
 
-.hamburgerIcon span:first-child {
-    transform: none;
+.section1{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+   
 }
-.hamburgerIcon span:first-child {
-    opacity: 1;
+.content{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end; 
 }
-.hamburgerIcon span:first-child {
-    transform: none;
+
+.section1 .info {
+    font-size: 40px;
+    width: 50%;
+    margin-top: 10%;
+    margin-right: 10%;
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.buttons{
+    display: flex;
+    flex-direction: row;
+    margin-left: -60%;  
+     
+}
+#GitHub{
+    margin-left: 20%;
+}
+.buttons a{
+    display: flex;
+    text-decoration: none;
+    align-items: center;
+    color: white;
+    background-color: #38a3a5 ;
+    padding: 2% 5% ;
+    margin: 5% 5%;
+    border-radius: 20px;
+    transition: all 0.4s;
+}
+
+#icon{
+    margin-left: 3%;
+    width: 40px;
+    height: 40px;
+    
+}
+.buttons a:hover{
+    opacity: 90%;
+    color: white;
+    transform: scale(1.1);
 }
