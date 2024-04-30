@@ -85,7 +85,7 @@ ul{
 #photo1 {
     background-size: cover;
     background-position: center center;
-    box-shadow: 0 5px 5px 5px rgba(13, 110, 253, 0.2);
+    box-shadow: 0 5px 5px 5px #38a3a5;
     animation: animate 5s ease-in-out infinite;
     transition: all 1s ease-in-out;
     width: 500px;
