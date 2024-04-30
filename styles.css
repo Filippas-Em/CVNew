@@ -91,8 +91,6 @@ ul{
     width: 500px;
     height: 400px;
     margin-top: 10%;
-    margin-left: 5%;
-    margin-right: auto;
 }
 
 
@@ -108,40 +106,32 @@ ul{
     
 }
 
-.section1{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: flex-end;
-   
-}
+
 .content{
     display: flex;
     flex-wrap: wrap;
-    justify-content: flex-end; 
+    justify-content: flex-start; 
+    flex-direction: row;
 }
 
-.section1 .info {
-    font-size: 40px;
-    width: 50%;
-    margin-top: 10%;
-    margin-right: 10%;
-}
+
 
 .info {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
+    font-size: 40px;
+    width: 50%;
+    margin-top: 10%;
+    margin-left: 10%;
 }
 
 .buttons{
     display: flex;
     flex-direction: row;
-    margin-left: -60%;  
      
 }
-#GitHub{
-    margin-left: 20%;
-}
+
 .buttons a{
     display: flex;
     text-decoration: none;
@@ -165,3 +155,29 @@ ul{
     color: white;
     transform: scale(1.1);
 }
+
+.typewriter {
+    display: inline-block; 
+    overflow: hidden; /
+    margin-top: 5%; 
+    font-size: 50px; 
+  }
+  #text {
+    color: #38a3a5;
+    border-right: .15em solid #38a3a5; 
+    padding-right: 5px; 
+    animation: blink-caret 0.75s step-end infinite;
+  }
+
+  @keyframes blink-caret {
+    from, to { border-color: transparent; }
+    50% { border-color: #38a3a5; }
+  }
+
+  #lastName{
+    color: #38a3a5;
+  }
+  #greet {
+    font-size: 60px;
+  }
+
