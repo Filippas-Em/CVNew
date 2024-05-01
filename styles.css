@@ -11,13 +11,11 @@
 body{
     font-family: "roboto", "poppins", sans-serif;
     background-color: #f4f4f4;
-    line-height: 1.6;
 }
 .desktopNav {
     font-size: 40px;
     padding-top: 1%;
-    display: flex;
-    
+    display: flex;  
 }
 #logo {
     font-size: 30px;
@@ -67,9 +65,9 @@ ul{
 
 .nav__link::after {
     content: "" ;
-    height: 2px;
+    height: 4px;
     width: 100%;
-    background: gray ;
+    background: #38a3a5 ;
     position: absolute;
     left: 0;
     bottom: -15px ;
@@ -181,3 +179,52 @@ ul{
     font-size: 60px;
   }
 
+
+.about{
+    display: flex;
+    flex-direction: row;
+    margin-top: 10%;
+    padding-left: 5% ;
+    margin-bottom: 1000px;
+}
+
+.aboutImages{
+    width: 40%;
+    position: relative;
+    
+}
+
+.aboutImages img{
+    width: 80%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+#aboutImages1{
+    z-index: 0;
+}
+
+#aboutImages2{
+    scale: 0.8;
+    z-index: 1;
+    top: 200px;
+    left: 200px;
+}
+
+.aboutText{
+    width: 50%;
+    margin-left: 5%;
+    font-size: 25px;
+}
+
+.additionalText{
+    display: flex;
+    margin-top: 5% ;
+    line-height: 1.6;
+    
+}
+
+.additionalText > ul:nth-child(2) {
+    margin-left: 10%;
+}
