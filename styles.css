@@ -182,10 +182,10 @@ ul{
 
 .about{
     display: flex;
+    flex-wrap: wrap;
     flex-direction: row;
     margin-top: 10%;
     padding-left: 5% ;
-    margin-bottom: 1000px;
 }
 
 .aboutImages{
@@ -227,4 +227,180 @@ ul{
 
 .additionalText > ul:nth-child(2) {
     margin-left: 10%;
+}
+
+.experience {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding-bottom: 10%;
+}
+
+.wrapper {
+    
+    margin-top: 10%;
+    padding: 5%;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    flex-wrap: wrap;
+    
+    }
+.wrapper2 {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.experience img {
+    width: auto;
+    height: 120px;
+    pointer-events: none;
+}
+.experience p {
+    pointer-events: none;
+}
+
+.box {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    width: 180px;
+    height: 180px;
+    margin: 40px ;
+    text-align: center;
+    justify-content: center;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    transition: all 0.4s;
+    line-height: 3;
+    
+}
+
+.collumn :hover {
+    transform: scale(1.2);
+}
+
+.contact{
+    padding-top: 10%;
+    background-color: #0d1b2a;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 10%;
+}
+.contactWrapper{
+    color: #f4f4f4;
+    background-color: #0d1b2a;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+}
+
+.contactInfo {
+    display: flex;
+    line-height: 2;
+    font-size: 20px;
+}
+.contactInfo span {
+    color: #38a3a5;
+    font-weight: 900;
+    font-size: 30px;
+
+}
+
+
+.contactMe{
+    display: flex;
+    margin-right: 20%;
+    
+}
+
+.contactMe img {
+    width: 50px;
+    height: 50px;
+    margin: 80% 0;
+}
+
+.contactMe li {
+    margin: 30px;
+}
+
+.contactText {
+    margin-bottom: 5% ;
+}
+
+.contactText h2 {
+    font-size: 60px;
+}
+
+#formTitle {
+    color: black;
+    line-height: 1;
+    margin: 9% 0 ;
+}
+
+.form input , textArea {
+    background-color: ;
+    font-size: 25px;
+    margin: 10px 20%;
+    margin-bottom: 6%;
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid #38a3a5;
+    width: 400px;
+    background-color: #f4f4f4;
+}
+
+.form button {
+    width: 35%;
+    height: 10%;
+    padding: 10px;
+    background-color: #38a3a5;
+    border: none;
+    border-radius: 10px;
+    font-size: 30px;
+    font-weight: 800;
+    transition: all 0.4s;
+}
+.form button:hover {
+    scale: 1.1;
+    cursor: pointer;
+}
+
+.form{
+    color: black;
+    width: 900px ;
+    height: 600px;
+    padding: 0%;
+    background-color: #f4f4f4;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 10px;
+    box-shadow: 0px 7px 15px #38a3a5;    
+    margin-left: 10%;
+}
+
+.inputGroup{
+    position: relative;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.placeholder {
+    position: absolute;
+    top: 16px;
+    left: 20px ;
+    transition: 0.3s;
+    pointer-events: none;
+}
+
+.inputGroup:focus-within .placeholder {
+    top: -10px;
+    background-color: #f4f4f4;
 }
