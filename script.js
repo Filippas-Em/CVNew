@@ -96,3 +96,16 @@ window.addEventListener('scroll', function() {
     isMobileNavSticky = false; // Set isMobileNavSticky to false to indicate that navbar is no longer sticky
   }
 });
+
+
+var scrollTopLink = document.getElementById('cloudsLogo');
+
+scrollTopLink.addEventListener('click', function(event) {
+  event.preventDefault(); // Prevent the default anchor behavior (scrolling to the top of the page)
+
+  // Scroll to the top of the page
+  window.scrollTo({
+    top: 0,
+    behavior: 'smooth' // Smooth scrolling behavior
+  });
+});

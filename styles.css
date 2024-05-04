@@ -534,3 +534,21 @@ html {
   #navbar.sticky {
     height: 90px;
   }
+
+
+  #cloudsLogo{
+    width: 50px;
+    height: 50px;
+}
+
+#logo a {
+    text-decoration: none;
+    color: black;
+    
+}
+
+.footer a {
+    color: #38a3a5;
+    text-decoration: none;
+    font-size: 30px;
+}

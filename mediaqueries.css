@@ -592,6 +592,11 @@
     #aboutImages2{
         display:none ;
     }
+    #cloudsLogo{
+        width: 30px;
+        height: 30px;
+        margin-right: 10px;
+    }
 }
 
 @media screen and (min-width: 1151px) and (max-width: 1350px){
