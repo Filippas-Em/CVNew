@@ -431,7 +431,7 @@ ul{
 }
 
 .off-screen-menu{
-    background-color: rgb(34, 37, 49) ;
+    background-color: #222531 ;
     height: 100vh;
     width: 100%;
     max-width: 450px;
@@ -515,4 +515,22 @@ ul{
 
 html {
     scroll-behavior: smooth;
+  }
+
+  .sticky {
+    background-color: #222531;
+    color: white;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000; 
+    transition: all 0.8s ease; 
+  }
+
+  #navbar.sticky a {
+    color: white;
+  }
+
+  #navbar.sticky {
+    height: 90px;
   }

@@ -62,3 +62,37 @@ hamMenu.addEventListener('click', () => {
   hamMenu.classList.toggle('active');
   offScreenMenu.classList.toggle('active'); 
 });
+
+var navbar = document.getElementById('navbar');
+var section1 = document.getElementById('section1');
+var section1Top = section1.offsetTop; // Get the top position of section1 from the top of the viewport
+var isSticky = false;
+
+window.addEventListener('scroll', function() {
+  // Check if the scroll position is greater than or equal to the top of section1
+  if (window.scrollY >= section1Top && !isSticky) {
+    navbar.classList.add('sticky'); // Add the sticky class
+    isSticky = true; // Set isSticky to true to indicate that navbar is sticky
+  } else if (window.scrollY < section1Top && isSticky) {
+    navbar.classList.remove('sticky'); // Remove the sticky class
+    isSticky = false; // Set isSticky to false to indicate that navbar is no longer sticky
+  }
+});
+
+
+
+var mobileNav = document.getElementById('mobileNav');
+var sectionOne = document.getElementById('section1');
+var sectionOneTop = sectionOne.offsetTop;
+var isMobileNavSticky = false;
+
+window.addEventListener('scroll', function() {
+  // Check if the scroll position is greater than or equal to the top of section1
+  if (window.scrollY >= sectionOneTop && !isMobileNavSticky) {
+    mobileNav.classList.add('sticky'); // Add the sticky class for mobile navbar
+    isMobileNavSticky = true; // Set isMobileNavSticky to true to indicate that navbar is sticky
+  } else if (window.scrollY < sectionOneTop && isMobileNavSticky) {
+    mobileNav.classList.remove('sticky'); // Remove the sticky class for mobile navbar
+    isMobileNavSticky = false; // Set isMobileNavSticky to false to indicate that navbar is no longer sticky
+  }
+});
