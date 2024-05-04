@@ -89,6 +89,7 @@ ul{
     width: 500px;
     height: 400px;
     margin-top: 10%;
+    z-index: 0;
 }
 
 
@@ -127,7 +128,7 @@ ul{
 .buttons{
     display: flex;
     flex-direction: row;
-     
+    
 }
 
 .buttons a{
@@ -293,17 +294,17 @@ ul{
 }
 .contactWrapper{
     color: #f4f4f4;
-    background-color: #0d1b2a;
     display: flex;
     flex-direction: column;
     text-align: center;
-    align-items: center;
 }
 
 .contactInfo {
     display: flex;
+    flex-wrap: wrap;
     line-height: 2;
     font-size: 20px;
+    width: 100%;
 }
 .contactInfo span {
     color: #38a3a5;
@@ -315,19 +316,24 @@ ul{
 
 .contactMe{
     display: flex;
-    margin-right: 20%;
-    
+    position: relative;
+    flex-wrap: wrap;
+    margin-right: 200px;
+}
+
+.contactMe li{
+    margin: 15% 0;
 }
 
 .contactMe img {
+    position: absolute;
     width: 50px;
     height: 50px;
-    margin: 80% 0;
+    left: -50px ;
+    margin: ;
 }
 
-.contactMe li {
-    margin: 30px;
-}
+
 
 .contactText {
     margin-bottom: 5% ;
@@ -344,7 +350,6 @@ ul{
 }
 
 .form input , textArea {
-    background-color: ;
     font-size: 25px;
     margin: 10px 20%;
     margin-bottom: 6%;
@@ -355,15 +360,16 @@ ul{
     background-color: #f4f4f4;
 }
 
+
+
 .form button {
-    width: 35%;
-    height: 10%;
-    padding: 10px;
+    margin: 10px;
+    padding: 20px;
     background-color: #38a3a5;
+    color: white;
     border: none;
     border-radius: 10px;
     font-size: 30px;
-    font-weight: 800;
     transition: all 0.4s;
 }
 .form button:hover {
@@ -371,18 +377,15 @@ ul{
     cursor: pointer;
 }
 
-.form{
+.form{  
     color: black;
-    width: 900px ;
-    height: 600px;
-    padding: 0%;
+    padding: 0 30px;
     background-color: #f4f4f4;
     display: flex;
     align-items: center;
     flex-direction: column;
     border-radius: 10px;
     box-shadow: 0px 7px 15px #38a3a5;    
-    margin-left: 10%;
 }
 
 .inputGroup{
@@ -394,13 +397,106 @@ ul{
 
 .placeholder {
     position: absolute;
-    top: 16px;
+    top: 5px;
     left: 20px ;
     transition: 0.3s;
     pointer-events: none;
+    font-size: 30px;
 }
 
-.inputGroup:focus-within .placeholder {
-    top: -10px;
-    background-color: #f4f4f4;
+.floating {
+    top: -30px;
+    font-size: 25px;
 }
+
+.contactMe,
+.form {
+    flex: 1;
+}
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    line-height: 2;
+    height: 250px;
+    background-color: #000814 ;
+    color: #dad7cdb4;
+}
+
+.footer span {
+    font-weight: 500;
+    font-size: 20px;
+}
+
+.off-screen-menu{
+    background-color: rgb(34, 37, 49) ;
+    height: 100vh;
+    width: 100%;
+    max-width: 450px;
+    position: fixed;
+    top: 0;
+    right: -450px ;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    font-size: 3rem;
+    transition: 0.3s ease;
+    z-index: 1;
+}
+
+.off-screen-menu.active  {
+    right: 0;
+}
+
+.mobileNav {
+    padding: 1rem;
+    display: flex;
+    background-color: rgb(34, 37, 49);
+}
+
+.ham-menu{
+    height: 50px;
+    width: 50px;
+    margin-left: auto;
+    margin-right: 20px;
+    position: relative;
+}
+
+.ham-menu span {
+    height: 5px;
+    width: 100%;
+    background-color: #38a3a5;
+    border-radius: 25px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: .3s ease;
+    z-index: 2;
+}
+
+.ham-menu span:nth-child(1) {
+    top: 25%;
+}
+
+.ham-menu span:nth-child(3) {
+    top: 75%;
+}
+
+
+.ham-menu.active span:nth-child(1) {
+    top: 50%;
+    transform: translate(-50%, -50%) rotate(45deg);
+}
+
+.ham-menu.active span:nth-child(2) {
+    opacity: 0;
+}
+
+.ham-menu.active span:nth-child(3) {
+    top: 50%;
+    transform: translate(-50%, -50%) rotate(-45deg);
+}   

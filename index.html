@@ -14,7 +14,7 @@
 <body>
     
         <nav class="desktopNav">
-            <div id="logo">Φίλιππας</div>
+            <div id="logo">LOGO</div>
             <ul class="navbarnav" >
                 <li><a class="nav__link" href="index.html">Σχετικά</a></li>
                 <li><a class="nav__link" href="about.html">Εμπειρία</a></li>
@@ -22,12 +22,28 @@
                 <li><a  href=""><img id="flag" src="Assets/english flag.png" alt="english"></a></li>
             </ul>
         </nav>
-        
+
+        <div class="off-screen-menu">
+            <ul>
+                <li><a class="nav__link" href="index.html">Σχετικά</a></li>
+                <li><a class="nav__link" href="about.html">Εμπειρία</a></li>
+                <li><a class="nav__link" href="contact.html">Επικοινωνία</a></li>
+                <li><a  href=""><img id="flag" src="Assets/english flag.png" alt="english"></a></li>
+            </ul>
+        </div>
+
+        <nav class="mobileNav">
+            <div class="ham-menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
     
         <div class="content">
             <div class="info">
                 <div class="group">
-                    <div>
+                    <div class="groupInfo">
                         <h1><span id="greet">
                             Γεια, είμαι ο 
                             </span><br>
@@ -38,7 +54,7 @@
                         <div class="typewriter">                            
                             <span id="fixed-letter">A </span><span id="text"></span>                        </div>                       
                     </div>
-                    <div class="buttons">
+                    <div class="buttons" id="buttons">
                         <a href="Assets/CV.pdf" download="CVFilippas.pdf" id="cv">Βιογραφικό <img id="icon" src="Assets/file-download.png" alt=""></a>
                         <a href="https://github.com/Filippas-Em" id="GitHub" target="_blank">GitHub <img  id="icon" src="Assets/github (1).png" alt=""></a>
                     </div>
@@ -144,14 +160,9 @@
                 <div class="contactInfo">
                     <div class="contactMe">
                         <ul>
-                            <li><img src="Assets/address.png" alt=""></li>
-                            <li><img src="Assets/phone.png" alt=""></li>
-                            <li><img src="Assets/mail.png" alt=""></li>
-                        </ul>
-                        <ul>
-                            <li>  <p><span>Διεύθυνση</span> <br>Λασκαρίδου 54, <br>Καλλιθέα, Αθήνα <br>17676</p></li>
-                            <li>  <p><span>Τηλέφωνο</span><br>6943694628</p></li>
-                            <li> <p><span>Email</span><br>emmanouil.filippas@gmail.com</p></li>
+                            <li>  <p><img src="Assets/address.png" alt=""><span>Διεύθυνση</span> <br>Λασκαρίδου 54, <br>Καλλιθέα, Αθήνα <br>17676</p></li>
+                            <li>  <p><img src="Assets/phone.png" alt=""><span>Τηλέφωνο</span><br>6943694628</p></li>
+                            <li> <p><img  id="emailimg" src="Assets/mail.png" alt=""><span>Email</span><br>emmanouil.filippas@gmail.com</p></li>
                             
                         </ul>
                     </div>
@@ -177,6 +188,12 @@
                 </div>
             </div>
 
+        </div>
+
+        <div class="footer">
+            <h2>LOGO</h2>
+            <h2>Socials?</h2>
+            <p>All rights reserved  &copy 2024 <span>Emmanouil Filippas</span></p>
         </div>
 
     <script src="script.js"></script>

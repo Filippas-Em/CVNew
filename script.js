@@ -4,8 +4,7 @@ function toggleMenu() {
   menu.classList.toggle('open');
   icon.classList.toggle('open');
 }
-const texts = ['Web Developer', 'Full Stack Developer',   'Web Development Enthusiast'
-];
+const texts = ['Web Developer', 'Full Stack Developer'];
 let index = 0; 
 
 function typeWriter() {
@@ -39,3 +38,27 @@ function typeWriter() {
 }
 
 typeWriter();
+
+
+document.addEventListener('DOMContentLoaded', function() {
+  const inputs = document.querySelectorAll('.inputGroup input, .inputGroup textarea');
+  inputs.forEach(input => {
+      input.addEventListener('input', function() {
+          const label = this.previousElementSibling;
+          if (this.value.trim()) {
+              label.classList.add('floating');
+          } else {
+              label.classList.remove('floating');
+          }
+      });
+  });
+});
+
+
+const hamMenu = document.querySelector('.ham-menu');
+const offScreenMenu = document.querySelector(".off-screen-menu");
+
+hamMenu.addEventListener('click', () => {
+  hamMenu.classList.toggle('active');
+  offScreenMenu.classList.toggle('active'); 
+});

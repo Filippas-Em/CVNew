@@ -1,18 +1,527 @@
-@media screen and (max-width: 600px){
+@media screen and (max-width: 409px){
+    
     .desktopNav {
         display: none;
     }
-    #hamburgerNav {
+    
+    .content{
+        all: unset;
         display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #photo1{
+        scale: 0.7;
+    }
+
+    .info{
+        all: unset;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 30px;
+        width: 80%;
+        line-height: 1.3;
+    }
+    #greet {
+        font-size: 50px;
+        
+    }
+
+    .buttons{
+        all: unset;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .buttons a {
+        text-align: center;
+        
+    }
+
+
+    .about{
+        all: unset;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: row;
+    }
+    .aboutText{
+        margin: 0;
+        width: 80%;
+        font-size: 14px;
+    }
+    .typewriter{
+        font-size: 28px;
+    }
+    
+    .aboutImages{
+        scale: 1.2;
+        margin-left: 20px;
+        margin-bottom: 100px;
+        display: none;
+    }
+    .experience{
+        scale: 0.5;
+        margin: 0;
+    }
+    .wrapper2{
+        all: unset;
+        display: flex;
+    }
+    .box{
+        width: 170px;
+        height: 170px;
+    }
+
+    .contactInfo{
+        all: unset;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contactText h2 {
+        font-size: 40px;
+    }
+
+    .contactMe{
+        margin: 10px ;
+    }
+    .contactMe img {
+        position: absolute;
+        width: 50px;
+        height: 50px;
+        left: -50px ;
+        margin-left: 10px;
+    }
+
+    .form{
+        width: 80% ;
+    }
+    .form input , .form textarea{
+        width: 100%;
+    }
+    .form button{
+        width: 100%;
+    }
+    #emailimg{
+        top: 240px;
+    }
+
+    .placeholder {
+        top: 17px;
+        left: 20px ;
+    }
+    .floating {
+        top: -20px;
+        
+    }
+
+}
+
+
+@media screen and (min-width: 410px) and (max-width: 490px){
+    
+    .desktopNav {
+        display: none;
+    }
+    
+    .content{
+        all: unset;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #photo1{
+        scale: 0.8;
+    }
+
+    .info{
+        all: unset;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 40px;
+        width: 80%;
+        line-height: 1.3;
+    }
+
+    .buttons{
+        all: unset;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .buttons a {
+        text-align: center;
+        
+    }
+
+
+    .about{
+        all: unset;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: row;
+    }
+    .aboutText{
+        margin: 0;
+        width: 80%;
+        font-size: 16px;
+    }
+    
+    .aboutImages{
+        scale: 1.2;
+        margin-left: 20px;
+        margin-bottom: 100px;
+        display: none;
+    }
+    .experience{
+        scale: 0.5;
+        margin: 0;
+    }
+    .wrapper2{
+        all: unset;
+        display: flex;
+    }
+    .box{
+        width: 170px;
+        height: 170px;
+    }
+
+    .contactInfo{
+        all: unset;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contactText h2 {
+        font-size: 40px;
+    }
+
+    .contactMe{
+        margin: 10px ;
+    }
+    .contactMe img {
+        position: absolute;
+        width: 50px;
+        height: 50px;
+        left: -50px ;
+        margin-left: 10px;
+    }
+
+    .form{
+        width: 80% ;
+    }
+    .form input , .form textarea{
+        width: 100%;
+    }
+    .form button{
+        width: 100%;
+    }
+    #emailimg{
+        top: 240px;
+    }
+
+    .placeholder {
+        top: 17px;
+        left: 20px ;
+    }
+    .floating {
+        top: -20px;
+        
+    }
+
+}
+
+
+@media screen and (min-width: 491px) and (max-width: 701px){
+
+    .desktopNav {
+        display: none;
+    }
+    
+    .content{
+        all: unset;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #photo1{
+        scale: 0.8;
+    }
+
+    .info{
+        all: unset;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 40px;
+        width: 80%;
+        line-height: 1.3;
+    }
+
+    .buttons{
+        all: unset;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .buttons a {
+        text-align: center;
+        
+    }
+
+
+    .about{
+        all: unset;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: row;
+       
+    }
+    .aboutText{
+        margin: 0;
+        width: 80%;
+        font-size: 20px;
+    }
+    
+    .aboutImages{
+        scale: 1.2;
+        margin-left: 20px;
+        margin-bottom: 100px;
+        display: none;
+    }
+    .experience{
+        scale: 0.7;
+        width: 130%;
+    }
+    .wrapper2{
+        all: unset;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .box{
+        width: 200px;
+        height: 200px;
+    }
+
+    .contactInfo{
+        all: unset;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contactText h2 {
+        font-size: 40px;
+    }
+
+    .contactMe{
+        margin: 10px ;
+    }
+    .contactMe img {
+        position: absolute;
+        width: 50px;
+        height: 50px;
+        left: -50px ;
+        margin-left: 10px;
+    }
+
+    .form{
+        width: 450px ;
+    }
+
+    #emailimg{
+        top: 240px;
+    }
+
+    .placeholder {
+        top: 17px;
+        left: 20px ;
+    }
+    .floating {
+        top: -20px;
+        
+    }
+
+
+}
+
+@media screen and (min-width: 700px) and (max-width: 800px){
+    .desktopNav {
+        display: none;
+    }
+    
+    .content{
+        all: unset;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #photo1{
+        scale: 0.9;
+    }
+
+    .info{
+        all: unset;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+       font-size: 40px;
+        width: 80%;
+        line-height: 1.3;
+    }
+
+    .about{
+        all: unset;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: row;
+        
+    }
+    .aboutText{
+        margin: 0;
+        width: 80%;
+    }
+    
+    .aboutImages{
+        scale: 1.2;
+        margin-left: 20px;
+        margin-bottom: 100px;
+        display: none;
+    }
+    .experience{
+        scale: 0.8;
+    }
+    .wrapper2{
+        all: unset;
+        display: flex;
+    }
+    .box{
+        width: 170px;
+        height: 170px;
+    }
+
+    .contactInfo{
+        all: unset;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contactText h2 {
+        font-size: 40px;
+    }
+
+    .contactMe{
+        margin: 10px ;
+    }
+    .contactMe img {
+        position: absolute;
+        width: 50px;
+        height: 50px;
+        left: -50px ;
+        margin-left: 10px;
+    }
+
+    .form{
+        width: 450px ;
+    }
+
+    #emailimg{
+        top: 240px;
+    }
+
+}
+
+
+@media screen and (min-width: 801px) and (max-width: 1000px){
+    .desktopNav {
+        display: none;
+    }
+    
+    .content{
+        all: unset;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #photo1{
+        scale: 0.9;
+    }
+
+    .info{
+        all: unset;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+       font-size: 40px;
+        width: 80%;
+        line-height: 1.3;
+    }
+
+    .about{
+        all: unset;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: row;
+        
+    }
+    .aboutText{
+        margin: 0;
+        width: 80%;
+    }
+    
+    .aboutImages{
+        scale: 1.2;
+        margin-left: 20px;
+        margin-bottom: 100px;
+        display: none;
+    }
+    .experience{
+        scale: 0.8;
+    }
+    .wrapper2{
+        all: unset;
+        display: flex;
+    }
+    .box{
+        width: 170px;
+        height: 170px;
+    }
+    .contactMe{
+        margin: 10px ;
+    }
+    .contactMe img {
+        position: absolute;
+        width: 50px;
+        height: 50px;
+        left: -10px ;
     }
 }
 
-@media screen and (min-width: 880px) and (max-width: 1150px){
-    #logo {
+
+@media screen and (min-width: 1001px) and (max-width: 1150px){
+    .desktopNav {
         display: none;
-    }
-    .navbarnav {
-        margin-right: 0;
     }
     .desktopNav {
         justify-content: center;
@@ -26,31 +535,108 @@
     }
     
     .content{
+        all: unset;
         display: flex;
         align-items: center;
         justify-content: center;
     }
-   
-}
 
-@media screen and (min-width: 601px) and (max-width: 880px){
-    .navbarnav {
-        display: none;
-    }
-    .desktopNav {
-        justify-content: center;
-    }
-    .desktopNav {
-        display: none;
-    }
-    #hamburgerNav {
-        display: flex;
-    }
-}
-
-@media screen and (min-width: 1550px){
-    #photo1{
-        
+    .contactMe{
+        margin: 10px ;
     }
     
+    
+    .typewriter{
+        font-size: 30px; ;
+    }
+
+    .groupInfo{
+        line-height: 1;
+    }
+    
+    #photo1{
+        margin-top: 0;
+        scale: 0.8;
+    }
+    .about{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+    
+
+    #aboutImages2{
+        display: none;
+    }
+    .about{
+        all: unset;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: row;
+        
+    }
+    .aboutText{
+        margin: 0;
+    }
+    
+    .aboutImages{
+        scale: 1.2;
+        margin-left: 20px;
+        margin-bottom: 100px;
+    }
+
+    #aboutImages2{
+        display:none ;
+    }
+}
+
+@media screen and (min-width: 1151px) and (max-width: 1350px){
+
+    .mobileNav {
+        display: none;
+    }
+
+    .content{
+        all: unset;
+        display: flex;
+        scale: 0.8;
+        padding-bottom:200px ;
+    }
+
+    .about{
+        all: unset;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: row;
+        
+    }
+    .aboutText{
+        margin: 0;
+    }
+    
+    .aboutImages{
+        scale: 1.2;
+        margin-left: 20px;
+        margin-bottom: 100px;
+    }
+
+    #aboutImages2{
+        display:none ;
+    }
+}
+
+@media screen and (min-width: 1351px){
+    .mobileNav {
+        display: none;
+    }
+    
+}
+
+@media screen and (min-width: 2300px){
+    .experience{
+        scale: 1.5;
+        margin-top: 10%;
+    }
 }
