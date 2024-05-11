@@ -544,11 +544,23 @@ html {
 #logo a {
     text-decoration: none;
     color: black;
-    
 }
+
+#logo :hover{
+    opacity: 0.7;
+}
+
 
 .footer a {
     color: #38a3a5;
     text-decoration: none;
     font-size: 30px;
+}
+
+.footer a:hover{
+    opacity: 0.7;
+}
+
+.textarea{
+    font-family: "roboto", "poppins", sans-serif;
 }

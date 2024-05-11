@@ -109,3 +109,57 @@ scrollTopLink.addEventListener('click', function(event) {
     behavior: 'smooth' // Smooth scrolling behavior
   });
 });
+
+
+document.getElementById('contactForm').addEventListener('submit', function(event) {
+  event.preventDefault(); 
+
+  
+  const formData = new FormData(this);
+
+  
+  const submitButton = document.getElementById('submitButton');
+  const loadingSpinner = document.getElementById('loadingSpinner');
+
+  
+
+  
+  fetch('http://127.0.0.1:3000/send', {
+      method: 'POST',
+      body: formData
+  })
+  .then(response => {
+      if (response.ok) {
+          
+          submitButton.style.backgroundColor = 'green';
+          const lang = document.documentElement.lang;
+          if (lang === 'el'){
+              submitButton.innerText = 'Απεστάλη'; 
+          } else {
+              submitButton.innerText = 'Submitted';
+          }
+
+
+          
+          setTimeout(() => {
+            submitButton.style.backgroundColor = ''; 
+            
+            const lang = document.documentElement.lang;
+            if (lang === 'el') {
+                submitButton.innerText = 'Αποστολή';
+            } else {
+                submitButton.innerText = 'Submit';
+            }
+        }, 2000);
+
+          
+          this.reset();
+      } else {
+          alert('Error sending message. Please try again later.');
+      }
+  })
+  .catch(error => {
+    console.error('Error:', error);
+    alert('Error sending message. Please try again later. Details: ' + error.message);
+  });
+});

@@ -33,7 +33,7 @@
                 <li><a class="nav__link" href="#about">About</a></li>
                 <li><a class="nav__link" href="#experience">Experience</a></li>
                 <li><a class="nav__link" href="#contact">Contact</a></li>
-                <li><a  href=""><img id="flag" src="Assets/english.png" alt="english"></a></li>
+                <li><a  href="index.html"><img id="flag" src="Assets/greek.png" alt="english"></a></li>
             </ul>
         </div>
 
@@ -171,23 +171,23 @@
                             
                         </ul>
                     </div>
-                    <form class="form" action="">
-                        <h1 id="formTitle">Send Me a Message</h1>
+                    <form id="contactForm" class="form" action="http://127.0.0.1:3000/send" method="post">
+                        <h1 id="formTitle">Send a Message</h1>
                         <div class="inputGroup">
                             <label class="placeholder" for="name" id="nameLabel">Name</label>
                             <input type="text" id="formName" name="name" required>
                         </div>
                         <div class="inputGroup">
                             <label class="placeholder" for="email" id="emailLabel">Email</label>
-                            <input type="email" id="formEmail" name="mail" required>
+                            <input type="email" id="formEmail" name="email" required>
                         </div>
                         <div class="inputGroup">
-                            <label class="placeholder" for="formMessage" id="messageLabel">Messsage</label>
+                            <label class="placeholder" for="formMessage" id="messageLabel">Message</label>
                             <textarea class="textarea" rows="4" cols="50" name="formMessage" id="formMessage" required></textarea>
                         </div>
                         
                         
-                        <button type="submit">submit</button>
+                        <button id="submitButton" type="submit">Submit</button>
                         
                     </form>
                 </div>

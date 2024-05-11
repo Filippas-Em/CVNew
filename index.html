@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="el">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -33,7 +33,7 @@
                 <li><a class="nav__link" href="#about">Σχετικά</a></li>
                 <li><a class="nav__link" href="#experience">Εμπειρία</a></li>
                 <li><a class="nav__link" href="#contact">Επικοινωνία</a></li>
-                <li><a  href=""><img id="flag" src="Assets/english.png" alt="english"></a></li>
+                <li><a  href="indexEN.html"><img id="flag" src="Assets/english.png" alt="english"></a></li>
             </ul>
         </div>
 
@@ -171,7 +171,7 @@
                             
                         </ul>
                     </div>
-                    <form class="form" action="">
+                    <form id="contactForm" class="form" action="http://127.0.0.1:3000/send" method="post">
                         <h1 id="formTitle">Στείλε ένα μήνυμα</h1>
                         <div class="inputGroup">
                             <label class="placeholder" for="name" id="nameLabel">Όνομα</label>
@@ -179,7 +179,7 @@
                         </div>
                         <div class="inputGroup">
                             <label class="placeholder" for="email" id="emailLabel">Email</label>
-                            <input type="email" id="formEmail" name="mail" required>
+                            <input type="email" id="formEmail" name="email" required>
                         </div>
                         <div class="inputGroup">
                             <label class="placeholder" for="formMessage" id="messageLabel">Μήνυμα</label>
@@ -187,8 +187,8 @@
                         </div>
                         
                         
-                        <button type="submit">Υποβολή</button>
-                        
+                        <button id="submitButton" type="submit">Αποστολή</button>
+                        <span id="loadingSpinner" class="loader" style="display: none;"></span>
                     </form>
                 </div>
             </div>
